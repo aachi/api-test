@@ -14,6 +14,7 @@ func (s *server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte(`{"message": "hello world"}`))
 }
 
+//testnig github st
 func main() {
 	s := &server{}
 	http.Handle("/", s)
